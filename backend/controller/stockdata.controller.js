@@ -42,8 +42,8 @@ const stockdata = async (req, res) => {
    
     } catch (error) { 
         console.error('Error retrieving the data from externalAPI', error);  
-        return res.status(500).json({ 
-            Error: 'Internal server error in fetching'
+        res.status(500).json({ 
+            Error: 'Internal Error fetching data from Market Stack'
         }); 
     }
 } 
