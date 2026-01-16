@@ -29,11 +29,11 @@ const stockdata = async (req, res) => {
 
     //send the res here 
     return res.status(200).json({ 
-        
-    })
+        externalAPiResponse: response
+    }); 
    
     } catch (error) { 
-
+        
     }
     
 } 
