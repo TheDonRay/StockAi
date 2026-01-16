@@ -1,5 +1,4 @@
-const express = require('express'); 
-const organizeandsend = express.Router(); 
+const express = require("express");
+const organizeandsend = express.Router();
 
-
-module.exports = organizeandsend; 
+module.exports = organizeandsend;
