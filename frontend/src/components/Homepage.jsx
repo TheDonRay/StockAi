@@ -13,14 +13,12 @@ export default function Homepage() {
         <h1 className="info-title">Broker</h1>
         <p className="info-description">
           Your intelligent stock analysis companion. Get real-time insights,
-          market trends, and data-driven recommendations to make informed
-          investment decisions.
+          market trends, and data-driven recommendations without overthinking a stock. 
         </p>
         <ul className="info-features">
           <li>Real-time market analysis</li>
           <li>AI-powered stock recommendations</li>
-          <li>Portfolio tracking</li>
-          <li>Risk assessment tools</li>
+          <li>AI-driven calculations—evaluating volatility, price changes, volume strength, and daily range </li>
         </ul>
       </div>
 
