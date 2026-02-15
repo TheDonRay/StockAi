@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
 
 //instantiate the route
 app.use("/api/v1/", stockdataroute);
+
 app.use("/api/v1/", organizeSend);
 app.use("/api/v1", users);  
 
