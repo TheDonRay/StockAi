@@ -12,7 +12,8 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://itsbroker.vercel.app"
+    "https://itsbroker.vercel.app",
+    "https://broker-k095hbtsm-thedons-projects.vercel.app"
   ]
 }));
 
