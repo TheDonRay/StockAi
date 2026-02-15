@@ -40,7 +40,6 @@ const usersignup = async (req, res) => {
         const token = jwt.sign(
             { userId: newUser._id, username: newUser.Username },   
             SK, //this is for the secret token this is basically the payload. 
-            { expiresIn: '2h'}
         ); 
         
         res.status(201).json({ 
