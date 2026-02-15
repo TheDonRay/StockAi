@@ -32,7 +32,7 @@ export default function Homepage() {
       setLoading(true); // start loading here.
       
       try { 
-        const sendDataToBackend = await fetch(`http://localhost:7898/api/v1/login`, { 
+        const sendDataToBackend = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/login`, { 
           method: "POST", 
           headers: { 
             "Content-Type": "application/json"
