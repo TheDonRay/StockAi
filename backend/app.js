@@ -9,7 +9,12 @@ const users = require('./routes/userloginsignup.route.js');
 
 
 app.use(express.json());
-app.use(cors()); 
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://itsbroker.vercel.app"
+  ]
+}));
 
 //simple backend route to make sure backend is correctly running
 app.get("/", (req, res) => {
