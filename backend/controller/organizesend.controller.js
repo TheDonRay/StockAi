@@ -32,7 +32,7 @@ const organizeAnalysis = async (req, res) => {
         })) || [];  
         // just to make sure its correctly calculating it as such  
         //send data to open ai now with a strong prompt.  
-        const AItrader = await client.chat.completions.create({ 
+        const Broker = await client.chat.completions.create({ 
             model: "gpt-5-nano", 
             messages: [ 
                 { 
@@ -48,7 +48,7 @@ const organizeAnalysis = async (req, res) => {
         }); 
 
         return res.status(200).json({ 
-            AItrader: AItrader.choices[0].message.content
+            Broker: Broker.choices[0].message.content
         }); 
 
     } catch (error) { 
