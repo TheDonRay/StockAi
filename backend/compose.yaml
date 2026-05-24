@@ -1,0 +1,10 @@
+
+services:
+  backend:
+    build:
+      context: .
+    env_file:
+      - .env
+    ports:
+      - 7898:7898
+
